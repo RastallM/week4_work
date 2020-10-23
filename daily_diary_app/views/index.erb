@@ -10,12 +10,29 @@
   <body>
 
     <h1> Welcome to your Daily Diary</h1><br /><br />
-    <h3> What would you like to do?</h3>
+  
+    <link href="../lib/form.css" rel="stylesheet">
+      <form method="post">
+      <fieldset>
+        <legend>What would you like to do today?</legend>
+        <div>
+          <input type="submit" formaction="/diary/add-entry" 
+          id="add_entry" name="choice" value="Add Entry" checked>
+    
+          <input type="submit" id="delete_entry"
+          name="choice" value="Delete Entry">
+    
+          <input type="submit" id="amend_entry"
+          name="choice" value="Amend Entry">
 
-
-    
-    
-    
+          <input type="submit" id="view_diary"
+          name="choice" value="View Diary">
+        </div>
+        <div>
+          
+        </div>
+      </fieldset>
+    </form>
     
   </body>
 </html>
