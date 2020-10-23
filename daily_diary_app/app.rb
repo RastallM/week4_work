@@ -3,12 +3,15 @@ require 'sinatra/base'
 class DailyDiaryApp < Sinatra::Base
 
   get '/' do
+    redirect '/diary'
+  end
+
+  get '/diary' do
     erb :index
   end
 
-  post '/diary/add-entry' do
-    redirect '/diary/add-entry'
-    "you're on the post page"
+  post '/diary' do
+    erb :create
   end
 
   get 'diary/add-entry' do

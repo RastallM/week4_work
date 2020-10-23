@@ -6,10 +6,10 @@ feature 'home route displays title' do
 
   scenario 'user chooses the add entry option' do
     visit('/')
-    choose 'add_entry'
-    click_button 'Submit'
-
-    expect(page).to have_field('diary entry')
+    click_button 'add_entry'
+   
+    expect(page).to have_field('DiaryEntry')
+    expect(page).to have_content('Add your new diary entry below')
   end
 
 end
